@@ -1,0 +1,3 @@
+Just a small serious of tests to see how the gevent reactor works.
+
+Note that in 03sharedpooldeadlock, if we set the poolsize less than NUM_PARENTS+1, we get a deadlock.  This is potentially really nasty if you have a fixed-size pool and arbitrary pool spawning at each depth.  Beware all who shared-pool go here.
